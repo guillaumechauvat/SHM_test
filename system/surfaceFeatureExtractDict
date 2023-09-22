@@ -38,7 +38,7 @@ curvature true;
 // Output options:
 
     // Write features to obj format for postprocessing
-    writeObj            yes;
+    writeObj            false;
 }
 
 
