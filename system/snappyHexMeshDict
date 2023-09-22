@@ -24,25 +24,7 @@ geometry
 	{
 		type triSurfaceMesh;
 		name pipe;
-		//regions
-		//{
-			//walls
-			//{
-				//name walls;
-			//}
-			//bend
-			//{
-				//name bend;
-			//}
-			//inlet
-			//{
-				//name inlet;
-			//}
-			//outlet
-			//{
-				//name outlet;
-			//}
-		//}
+		scale 0.001;
 	}
 }
 
@@ -149,9 +131,9 @@ addLayersControls
 			nSurfaceLayers 9;
 		}
 	}
-    thickness 3;
-    firstLayerThickness 0.1;
-    minThickness 1;
+    thickness 0.003;
+    firstLayerThickness 0.0001;
+    minThickness 0.001;
     nGrow 0;
     featureAngle -150;
     nRelaxIter 3;
