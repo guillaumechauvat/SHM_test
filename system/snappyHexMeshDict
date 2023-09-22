@@ -131,7 +131,7 @@ snapControls
     tolerance 1.0;
     nSolveIter 100;
     nRelaxIter 5;
-    nFeatureSnapIter 10;
+    nFeatureSnapIter 3;
     strictRegionSnap true;
 }
 
