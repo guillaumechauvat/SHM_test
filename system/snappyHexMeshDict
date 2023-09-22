@@ -16,7 +16,7 @@ FoamFile
 
 castellatedMesh true;
 snap            true;
-addLayers       true;
+addLayers       false;
 
 geometry
 {
@@ -58,7 +58,7 @@ castellatedMeshControls
     (
     	{
             file "pipe02.eMesh";
-            level 2;        // Have level 2 for all cells intersected
+            level 0;        // Have level 2 for all cells intersected
         //                      // by feature.
         //    levels ((0.1 2)); // Have level 2 for all cells within
         //                      // 0.1 of feature.
@@ -69,13 +69,13 @@ castellatedMeshControls
     {
 		pipe
 		{
-			level (1 1);
+			level (0 0);
 
 			regions
 			{
         		walls
         		{
-            		level       (1 1);
+            		level       (0 0);
             		patchInfo
             		{
                 		type wall;
@@ -84,7 +84,7 @@ castellatedMeshControls
         		}
         		bend
         		{
-            		level       (1 1);
+            		level       (0 0);
             		patchInfo
             		{
                 		type wall;
@@ -172,7 +172,7 @@ meshQualityControls
     maxBoundarySkewness 20;
     maxInternalSkewness 4;
 
-    maxConcave 80;
+    maxConcave 60;
     minVol 1e-13;
     minTetQuality -1;
     minArea -1;
